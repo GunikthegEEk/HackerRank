@@ -1,0 +1,26 @@
+#code
+T=int(input())
+strs = [input() for x in range(T)]
+   
+for i in strs:
+
+    if i.isalnum() == True:  
+        #print('i=',i)
+        rev = i[::-1]
+        if i.lower()==rev.lower():
+            print("YES")
+        else:
+            print("NO")
+    
+    else:
+        i = "".join(i for i in i if i.isalnum())
+        #print('i=',i)
+        
+        rev = i[::-1]
+        if i.lower()==rev.lower():
+            print("YES")
+        else:
+            print("NO") 
+
+        
+        
