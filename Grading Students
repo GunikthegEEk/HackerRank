@@ -17,10 +17,11 @@ vector<int> gradingStudents(vector<int> grades) {
     vector <int> ans;
     for ( int x : grades)
     {
-        if(x<38)
-         ans.push_back(x);
+        //if(x<38)
+         //ans.push_back(x);
         
-        else if ( x>=38 && ( (((x - x%5) + 5) - x) < 3 ) )
+        //else 
+        if ( x>=38 && ( (((x - x%5) + 5) - x) < 3 ) )
             ans.push_back((x - x%5) + 5);
         else
             ans.push_back(x);
